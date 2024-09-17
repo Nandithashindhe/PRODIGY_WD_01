@@ -1,4 +1,3 @@
-// Function to handle scroll event
 function handleScroll() {
     const navbar = document.getElementById('navbar');
     if (window.scrollY > 50) {
@@ -8,7 +7,6 @@ function handleScroll() {
     }
 }
 
-// Carousel functionality
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-slide');
 const totalSlides = slides.length;
@@ -32,8 +30,6 @@ function prevSlide() {
 document.querySelector('.carousel-button.next').addEventListener('click', nextSlide);
 document.querySelector('.carousel-button.prev').addEventListener('click', prevSlide);
 
-// Initialize carousel
 showSlide(currentSlide);
 
-// Add event listener for scroll event
 window.addEventListener('scroll', handleScroll);
